@@ -16,6 +16,9 @@ end
 # parameters: current_sports and favorite_sports (both arrays)
 # return value: an array containing items in both arrays
 # hint: use Array#intersection
+def common_sports(current_sports, favorite_sports)
+    current_sports.intersection(favorite_sports)
+end
 
 def common_sports(current_sports, favorite_sports)
     current_sports.intersection(favorite_sports)
@@ -25,7 +28,6 @@ end
 # parameter: games (an array)
 # return value: games, alphabetically sorted and duplicates removed
 # hint: chain Array#sort and Array#uniq together
-
 def alphabetical_list(games)
     games.sort.uniq
 end
